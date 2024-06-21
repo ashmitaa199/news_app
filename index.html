@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex" >
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="./assets/logo.jpg" alt="news-logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li id="politics" onclick="onNavItemClick('politics')" class="hover-link nav-item">Politics</li>
+                    <li id="business" onclick="onNavItemClick('business')" class="hover-link nav-item">Business</li>
+                    <li id="finance" onclick="onNavItemClick('finance')" class="hover-link nav-item">Finance</li>
+                    <li id="sports" onclick="onNavItemClick('sports')" class="hover-link nav-item">Sports</li>
+                    <li id="tech" onclick="onNavItemClick('tech')" class="hover-link nav-item">Technology</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" class="news-input" type="text" placeholder="eg.Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+            
+        </div>
+
+        
+
+
+
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">this is the title</h3>
+                <h6 id="news-source" class="news-source">end 23/45/66</h6>
+                <p id="news-desc" class="news-desc">Lorem,hi hello ashmita</p>
+            </div>
+        </div>
+      
+
+    </template>
+    <script src="script.js"></script>
+    
+</body>
+</html>
